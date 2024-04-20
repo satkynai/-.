@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+  padding-bottom: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: #2c3e6e;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+  transition: all 0.3s ease-in-out;
+}
+.logo {
+  top: 15 px;
+  flex-basis: 100%;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.upper {
+  display: block;
+  font-size: 1.2em; /* Измените размер шрифта по вашему вкусу */
+}
+
+.lower {
+  display: block;
+  font-size: 1.2em; /* Измените размер шрифта по вашему вкусу */
+  margin-top: 1 rem; /* Задайте отрицательное значение отступа для поднятия нижней части над верхней */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+  flex: 1;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.search-bar button {
+  border: none;
+  background-color: transparent;
+  width: 20px; /* Задать ширину кнопки */
+  height: 20px; /* Задать высоту кнопки */
+  background-image: url("поиск.png"); /* Путь к изображению поисковой иконки */
+  background-size: cover; /* Растянуть изображение, чтобы заполнить всю область кнопки */
+}
+
+.user-actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  flex-basis: 100%;
+}
+
+
+/* Скрыть вкладки регистрации и войти по умолчанию */
+#loginDropdown {
+  display: none;
+}
+
+/* Показать вкладки регистрации и войти при наведении на кнопку регистрации */
+#registerBtn:hover + #loginDropdown {
+  display: block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content a:last-child {
+  border-top: 1px solid #ddd;
+}
+
+.user-actions:hover .dropdown-content {
+  display: block;
+}
+
+.nav.active {
+  background-color: #4848a1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+  background-image: url("рама.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  color: #c9be99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.content h2,
+.content h3 {
+  display: block;
+  font-size: 150%;
+  margin: 20px 0;
+}
+
+.content p {
+  display: block;
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+footer {
+  background-color: #a09e9a;
+  padding: 40px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+}
+button {
+  background-color: #fff;
+  border: none;
+  color: #757171;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #000;
+}
+
+button:focus {
+  outline: none;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
