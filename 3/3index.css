@@ -89,21 +89,28 @@ body {
   padding: 5px 10px;
   border: none;
   border-radius: 3px;
-  background-color: #555;
+  background-color: #9c9797;
   color: #fff;
   cursor: pointer;
   flex-basis: 100%;
+  
+}
+.btn{
+  text-decoration: none;
+  color:#fff;
 }
 
 
 /* Скрыть вкладки регистрации и войти по умолчанию */
 #loginDropdown {
   display: none;
+  
 }
 
 /* Показать вкладки регистрации и войти при наведении на кнопку регистрации */
 #registerBtn:hover + #loginDropdown {
   display: block;
+ 
 }
 
 .dropdown-content {

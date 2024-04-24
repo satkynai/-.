@@ -1,0 +1,466 @@
+body {
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .container {
+    margin: 0px 166px;
+  }
+  
+  .header {
+    background-image: url(backgraund.png);
+    background-color: rgb(42, 91, 165);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px;
+    transition: color 0.2s linear;
+  }
+  .nav-item:hover {
+    color: darkorange;
+  }
+  .header-logo {
+    margin-left: -100px;
+    margin-right: 25px;
+  }
+  .cart {
+    position: relative;
+  }
+  .cart-img {
+    position: absolute;
+    right: 17px;
+  }
+  .num {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 0.2s linear;
+  }
+  .num:hover {
+    color: darkorange;
+  }
+  .phone-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+  }
+  .phone-holder {
+    display: flex;
+    align-items: center;
+  }
+  .button {
+    background-color: goldenrod;
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    font-weight: 700;
+    transition: color 0.2s linear;
+  }
+  .button:hover {
+    background-color: darkorange;
+    color: black;
+  }
+  .header-down {
+    position: relative;
+    left: 65px;
+  }
+  .header-title {
+    color: darkorange;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    left: 30px;
+    margin-top: 100px;
+    margin-bottom: 12px;
+  }
+  /*
+  .header-subtitle{
+      
+  }*/
+  .header-suptitle {
+    color: white;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .header-suptitle:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 61px;
+    background-color: white;
+    top: 127px;
+    left: 56px;
+  }
+  .header-suptitle:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 61px;
+    background-color: white;
+    top: 127px;
+    left: 308px;
+  }
+  .header-button {
+    background-color: goldenrod;
+    padding: 14px 28px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    transition: color 0.2s linear;
+  }
+  .header-button:hover {
+    background-color: darkorange;
+    color: black;
+  }
+  .cards-holder {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 349px;
+    height: auto;
+    box-shadow: 10px 10px 40px 20px #0000001a;
+    margin-right: 31px;
+    background-color: #fff;
+    margin-top: -80px;
+    padding: 10px 10px;
+  }
+  .card-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 7px;
+  }
+  .card-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 26px;
+  }
+  .card-title span {
+    color: darkorange;
+  }
+  .card-desc {
+    text-align: center;
+    justify-content: center;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #656363;
+  }
+  .history {
+    margin-top: 166px;
+    padding-bottom: 200px;
+  }
+  .history-title {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 54px;
+    margin-top: 21px;
+  }
+  .history-title span {
+    color: darkorange;
+    width: 444px;
+    text-align: center;
+  }
+  .history-desc {
+    color: #656363;
+    font-size: 16px;
+    width: 444px;
+    text-align: center;
+  }
+  .history-number {
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .number-item {
+    margin-right: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(197, 128, 44);
+  }
+  .number-item span {
+    display: block;
+    color: #000;
+  }
+  .history-images {
+    position: relative;
+  }
+  .history-holder {
+    display: flex;
+    justify-content: 0;
+  }
+  
+  .images-1 {
+    position: absolute;
+    z-index: 0;
+    top: 74px;
+    left: 200px;
+    box-shadow: 10px 10px 40px 20px #0808081a;
+  }
+  .images-2 {
+    position: absolute;
+    z-index: 999px;
+    top: -92px;
+    left: 363px;
+    box-shadow: 10px 10px 40px 20px #0808081a;
+  }
+  .images-3 {
+    position: absolute;
+    z-index: 999;
+    top: 110px;
+    left: 396px;
+    box-shadow: 10px 10px 40px 20px #0808081a;
+  }
+  .black-block {
+    background-image: url(backgraund.png);
+    padding: 80px 0;
+  }
+  /*
+  .left{
+  }*/
+  .left-title {
+    color: darkorange;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 52px;
+    /*text-align: center;
+      position: absolute;
+      left: 30px;
+      margin-top: 100px;*/
+    margin-bottom: 20px;
+  }
+  .left-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+  }
+  .right-btn {
+    background-color: goldenrod;
+    text-decoration: none;
+    color: white;
+    padding: 14px 18px;
+    font-weight: 700;
+    transition: color 0.2s linear;
+  }
+  .right-btn:hover {
+    background-color: darkorange;
+    color: black;
+  }
+  /*
+  .right-button{
+  }*/
+  .block-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dishes {
+    margin-top: 166px;
+    padding-bottom: 200px;
+  }
+  .dishes-title {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 54px;
+    margin-top: 21px;
+    text-align: center;
+    margin-bottom: 139px;
+  }
+  .dishes-title span {
+    color: darkorange;
+    width: 444px;
+    text-align: center;
+  }
+  .burgers {
+    display: flex;
+    justify-content: center;
+  }
+  .burger-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+  }
+  .burgers-image {
+    margin-right: 20px;
+  }
+  .burger-text {
+    font-family: "Tinos", serif;
+    font-size: 26px;
+    margin-left: 20px;
+  }
+  .menu {
+    background-image: url(newyork.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
+  }
+  .menu-title {
+    font-family: "Tinos", serif;
+    font-size: 54px;
+    padding-top: 98px;
+    color: rgb(43, 23, 13);
+    text-align: center;
+    padding-bottom: 138px;
+  }
+  .menu-item {
+    background-color: white;
+    text-align: center;
+    width: 33%;
+    padding-top: 88px;
+    padding-bottom: 30px;
+  }
+  .menu-text {
+    font-family: "Tinos", serif;
+    font-size: 26px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+  .menu-subtext {
+    font-size: 16px;
+  }
+  .menu-btn {
+    background-color: goldenrod;
+    text-decoration: none;
+    padding: 14px 67px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 5px 5px 10px 0px #0f07071a;
+    transition: color 0.2s linear;
+  }
+  .menu-btn:hover {
+    background-color: darkorange;
+    color: black;
+  }
+  .menu-button {
+    margin-top: 20px;
+  }
+  .price-image {
+    position: absolute;
+    bottom: -15px;
+    right: 75px;
+  }
+  .menu-image {
+    position: relative;
+  }
+  .price-420 {
+    position: absolute;
+    bottom: 6px;
+    right: 95px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .menu-items {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-item {
+    margin-right: 20px;
+  }
+  .coment {
+    background-color: #bbb7b7;
+    padding-top: 104px;
+    padding-bottom: 139px;
+  }
+  .coment-text {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .coment-img {
+    border-radius: 100px;
+  }
+  .coment-image {
+    text-align: center;
+  }
+  .coment-type {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+  }
+  .coment-name {
+    padding-top: 9px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .galery-title {
+    font-family: "Tinos", serif;
+    font-size: 54px;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 60px;
+  }
+  .galery-title span {
+    color: darkorange;
+  }
+  .galery-content {
+    display: flex;
+    justify-content: center;
+  }
+  .galery-left {
+    margin-right: 20px;
+  }
+  .galery-up,
+  .galery-down {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .cook {
+    padding-bottom: 100px;
+  }
+  .cook-title {
+    font-family: "Tinos", serif;
+    font-size: 54px;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+  .cook-title span {
+    color: darkorange;
+  }
+  .cook-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer {
+    background-color: #000;
+    padding: 50px 0px;
+    color: #fff;
+    text-align: center;
+  }
+  
